@@ -1,6 +1,7 @@
-
-h1{
-  font-family: "Londrina Solid", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+ 
+.londrina-solid {
+font-family: "Londrina Solid", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -10,7 +11,6 @@ h1{
   font-weight: 100;
   font-style: normal;
 }
-
 .londrina-solid-light {
   font-family: "Londrina Solid", sans-serif;
   font-weight: 300;
@@ -29,8 +29,9 @@ h1{
   font-style: normal;
 }
 
-p{
-  marvel-regular {
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.marvel-regular {
   font-family: "Marvel", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -53,4 +54,35 @@ p{
   font-weight: 700;
   font-style: italic;
 }  
+
+
+.small {
+  width: 150px;
+  height: auto;
 }
+
+.medium {
+  width: 300px;
+  height: auto;
+}
+
+.large {
+  width: 500px;
+  height: auto;
+}
+
+.logo{
+  width: 750px;
+  height: auto;
+  float:left;
+}
+
+h1{
+  font-size: 100px;
+  font-family:londrina-solid-light;
+} 
+
+h2{
+  font-size: 60px;
+  font-family:londrina-solid-light;
+} 

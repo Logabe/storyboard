@@ -30,12 +30,12 @@
       />
 
       <style>
-        img {
-          width: auto;
-          height: 750px;
+        img.logo {
           float: left;
-          padding-right: 20px;
-          padding-left: 50px;
+          width: 1200px;
+          height: auto;
+          padding-top: 20px;
+          padding-left: 100px;
         }
 
         .linked {
@@ -48,39 +48,81 @@
         }
 
         .bold {
-          font-weight: 300;
+          font-weight: 200;
           font-family: "Londrina Solid";
           font-size: 80px;
           color: #242781;
-          padding-left:100px;
+          padding-left: 100px;
         }
 
-        .heading {
+        .spacer {
+          padding-left: 200px;
+        }
+
+        h1 {
           font-family: "Londrina Solid", sans-serif;
           font-weight: 300;
           font-style: normal;
           font-size: 60px;
           color: #242781;
-          text-align: center;
+        }
+
+        h2 {
+          font-size: 60px;
+          font-family: "Londrina Solid", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          color: #242781;
+        }
+
+        p {
+          font-size: 40px;
+          font-family: "Marvel", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          color: black;
+          padding-left: 100px;
         }
       </style>
     </head>
 
     <body>
-      <img src="assets/logo.png" alt="An image of Storyboard's logo" />
-      <div style= "padding-top: 150px">
-      <a href="how-to.html"><p class="linked">> HOW DOES THIS WORK?</p></a>
-      <p class="linked">> TUTORIAL</p>
-      <p class="linked">> EXAMPLE GAMES</p>
-      <p class="linked">> FAQ</p>
+      <img src="assets/logo.png" alt="Storyboard's logo" class="logo" />
+      <div style="padding-top: 150px"></div>
+
+      <h2>
+        <a href="#section-steps"> > HOW DOES THIS WORK?</a>
+        <div></div>
+        <a href="#section-tutorial"> > TUTORIAL</a>
+        <div></div>
+        <a href="#section-example"> > EXAMPLE GAMES</a>
+        <div></div>
+        <a href="#section-faq"> > FAQ</a>
+      </h2>
+
+      <div style="clear: both; padding-top: 100"></div>
+
+      <h1 class="spacer">Make a Visual novel, get a Big&nbsp;IKEA Plushie!</h1>
 
       <div style="clear: both"></div>
+      <h2 class="bold" id="section-steps">HOW DOES IT WORK?</h2>
 
-      <h1 class="heading">Make a Visual novel, win a Big&nbsp;IKEA Plushie!</h1>
+      <a
+        href="https://join.slack.com/t/hackclub/shared_invite/zt-3b5sak3xz-bFujFB5ciw1jnEDzfUEzAg"
+      >
+        <img
+          src="assets/placeholder.jpg"
+          alt="Joining Hack Club Slack image"
+          class="small"
+        />
+      </a>
 
-      <div style="clear: both"></div>
-      <h2 class="bold">STEPS</p>
+      <h2 class="bold" id="section-tutorial">TUTORIAL</h2>
 
+      <h2 class="bold" id="section-example">EXAMPLE GAMES</h2>
+
+      <h2 class="bold" id="section-faq">FAQ</h2>
+      <p>hi how are we</p>
     </body>
   </html>
 </html>
