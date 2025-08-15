@@ -1,119 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Storyboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Jost:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/FAVICON.png">
-</head>
-<body>
-  <header class="main-header">
-    <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/hack-flag.png" alt="Hack Club Flag" class="hack-flag-corner">
-    </a>
-    <div class="event-dates"> WED, JULY 9th to SAT, JULY 12th</div>
-    <div class="header-content-row">
-      <div class="header-content-main">
-        <img src="assets/logo.png" alt="stOryboArd logo" class="logo big-logo">
-        <div class="header-subtitles">
-          <div class="header-subtitle-main">make a visual novel</div>
-          <div class="header-subtitle-secondary">get $$ for merch/plushie</div>
-        </div>
-      </div>
-      <img src="assets/raton-happy.png" alt="Happy Raccoon" class="header-raton-happy" id="raccoon-avoid">
-    </div>
-  </header>
+  <html>
+    <head>
+      <title>Storyboard</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="keywords"
+        content="storyboard, story, game, engine, visual novel, vn, renpy, teen, hack club, twine, itch.io"
+      />
+      <meta
+        name="description"
+        content="Create your own visual novel from
+      scratch! Teen-only monthly challenge led by Hack Club."
+      />
 
-  <section class="steps">
-    <div class="step">
-      <img src="assets/count-one.png" alt="Step 1" class="step-number-img">
-      <div class="step-content">
-        <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/people shot.jpeg" alt="People working together" class="step-people-img">
-        </a>
-        <h2>Get with friends <br>(or LOCK IN)</h2>
-        <p>partner with artists, join slack #storyboard track your hours through <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #fff; font-weight: bold;">hackatime</a> OR self-report (for artists!)</p>
-      </div>
-    </div>
-    <div class="step">
-      <img src="assets/count-two.png" alt="Step 2" class="step-number-img">
-      <div class="step-content">
-        <a href="https://www.renpy.org/doc/html/quickstart.html" target="_blank" rel="noopener noreferrer">
-          <img src="assets/renpy.png" alt="Ren'Py Logo" class="step-renpy-img">
-        </a>
-        <h2>create a visual novel on Ren'py</h2>
-        <p><a href="https://www.renpy.org/doc/html/quickstart.html" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #fff; font-weight: bold;">click here</a> to learn how to use ren'py - super easy!</p>
-      </div>
-    </div>
-    <div class="step">
-      <img src="assets/count-three.png" alt="Step 3" class="step-number-img">
-      <div class="step-content">
-        <a href="https://itch.io/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/itch.png" alt="Itch.io Logo" class="step-itch-img">
-        </a>
-        <h2>publish on <a href="https://itch.io/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">itch.io</a></h2>
-        <p>Make an account, export your game, and publish it to THE WORLD! Check out <a href="https://www.youtube.com/watch?v=_aaU43AmwNE" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #fff; font-weight: bold;">this video</a> for how</p>
-      </div>
-    </div>
-  </section>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+        rel="stylesheet"
+      />
 
-  <section class="submit-project">
-    <h2>SUBMIT YOUR PROJECT!</h2>
-    <p>"Ship" submit your project and prize wanted! Join the #storyboard channel to share your game too. We'll ship it to you or issue an HCB grant card.</p>
-    <a href="https://forms.hackclub.com/storyboard" target="_blank" rel="noopener noreferrer">
-      <button class="submit-btn">SUBMIT HERE</button>
-    </a>
-  </section>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      />
 
-  <section class="prizes">
-    <h2>PRIZES (DM/Email for anything custom)</h2>
-    <p class="prize-note">*we'll cover fully anything under $15 and partially cover anything over. reach out on slack or renran@hackclub.com for any questions!*</p>
-    <div class="prize-images">
-      <img src="assets/blahaj.png" alt="First Prize: Blahaj" class="prize-img">
-      <img src="assets/hutao.png" alt="Second Prize: Hutao" class="prize-img">
-      <img src="assets/capybara.png" alt="Third Prize: Capybara" class="prize-img">
-      <img src="assets/kpop card.png" alt="Kpop Card Prize" class="prize-img">
-    </div>
-  </section>
+      <style>
+        img {
+          width: auto;
+          height: 750px;
+          float: left;
+          padding-right: 20px;
+          padding-left: 50px;
+        }
 
-  <section class="ideas">
-    <h2>IDEAS:</h2>
-    <div class="idea-list">
-      <div class="idea-row">
-        <img src="assets/reversedate.png" alt="Reverse Raccoon Sim" class="idea-img">
-        <div class="idea-content">
-          <h3 class="idea-title">i dontwannadatearaccoon</h3>
-          <p class="idea-desc">a reverse raccoon dating sim where, instead of trying to date them, you're purposefully trying to AVOID dating them</p>
-          <span class="idea-authors">by hack clubbers: Lucy Chen, Alisa Ren, Yunfei Shuai, & Susan Zheng</span>
-        </div>
-      </div>
-      <div class="idea-row">
-        <img src="assets/slay.png" alt="Slay the Princess" class="idea-img">
-        <div class="idea-content">
-          <h3 class="idea-title">slay the princess</h3>
-          <p class="idea-desc">psychological horror visual novel where a voice urges the protagonist to slay a princess</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        .linked {
+          padding-top: 2px;
+          font-size: 40px;
+          font-weight: 300;
+          font-family: "Londrina Solid";
+          color: #242781;
+          padding-left: 60px;
+        }
 
-  <footer class="main-footer">
-    <img src="assets/raton-meh.png" alt="Raccoon Doodle" class="footer-img">
-    <a href="https://itch.io/games/genre-visual-novel" target="_blank" rel="noopener noreferrer">
-      <button class="footer-btn">CLICK ME</button>
-    </a>
-    <div class="footer-subnote">something stupidly awesome awaits you...</div>
-    <div class="footer-credit">© made with <span class="heart">♥</span> by renran sun</div>
-  </footer>
-</body>
-</html> 
+        .bold {
+          font-weight: 300;
+          font-family: "Londrina Solid";
+          font-size: 80px;
+          color: #242781;
+          padding-left:100px;
+        }
 
-<meta property="og:title" content="storyboard">
-<meta property="og:description" content="make a visual novel, get $$ for merch/plushies! ">
-<meta property="og:image" content="https://hc-cdn.hel1.your-objectstorage.com/s/v3/ac5ca5aba56878f718a4f985f55b71c7c4cac398_storyboard_header.png">
-<meta property="og:url" content="https://storyboard.hackclub.com/">
-<meta property="og:type" content="website">
+        .heading {
+          font-family: "Londrina Solid", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 60px;
+          color: #242781;
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <img src="assets/logo.png" alt="An image of Storyboard's logo" />
+      <div style= "padding-top: 150px">
+      <a href="how-to.html"><p class="linked">> HOW DOES THIS WORK?</p></a>
+      <p class="linked">> TUTORIAL</p>
+      <p class="linked">> EXAMPLE GAMES</p>
+      <p class="linked">> FAQ</p>
+
+      <div style="clear: both"></div>
+
+      <h1 class="heading">Make a Visual novel, win a Big&nbsp;IKEA Plushie!</h1>
+
+      <div style="clear: both"></div>
+      <h2 class="bold">STEPS</p>
+
+    </body>
+  </html>
+</html>
