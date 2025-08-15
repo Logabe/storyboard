@@ -77,12 +77,15 @@ font-family: "Londrina Solid", sans-serif;
   float:left;
 }
 
-h1{
-  font-size: 100px;
-  font-family:londrina-solid-light;
-} 
+.icon{
+  width: 100px;
+  height: auto;
+}
 
-h2{
-  font-size: 60px;
-  font-family:londrina-solid-light;
-} 
+.boxed-text{
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #9B81F0;
+}

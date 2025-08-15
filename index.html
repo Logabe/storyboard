@@ -38,17 +38,14 @@
           padding-left: 100px;
         }
 
-        .linked {
-          padding-top: 2px;
-          font-size: 40px;
-          font-weight: 300;
-          font-family: "Londrina Solid";
-          color: #242781;
-          padding-left: 60px;
+        .fit {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
         }
 
-        .bold {
-          font-weight: 200;
+        .header {
+          font-weight: 300;
           font-family: "Londrina Solid";
           font-size: 80px;
           color: #242781;
@@ -83,6 +80,32 @@
           color: black;
           padding-left: 100px;
         }
+
+        .image-row {
+          display: flex;
+          gap: 50px;
+          align-items: center;
+          justify-content: center;
+          padding-left: 100px;
+        }
+
+        .image-lined img {
+          width: 450px;
+          height: auto;
+        }
+
+        .image-lined p {
+          text-align: center;
+          font-size: 40px;
+          font-family: "Marvel", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+
+          color: white;
+          padding: 10px;
+          border-radius: 20px;
+          background-color: #9b81f0;
+        }
       </style>
     </head>
 
@@ -105,24 +128,77 @@
       <h1 class="spacer">Make a Visual novel, get a Big&nbsp;IKEA Plushie!</h1>
 
       <div style="clear: both"></div>
-      <h2 class="bold" id="section-steps">HOW DOES IT WORK?</h2>
+      <h2 class="header" id="section-steps">HOW DOES IT WORK?</h2>
+
+      <div class="image-row">
+        <div class="image-lined">
+          <img
+            src="assets/step 01.jpg"
+            alt="Raccoons talking about joining Hack Club Slack"
+            class="image-lined"
+          />
+          <p>SIGN UP THROUGH EMAIL/SLACK!</p>
+        </div>
+
+        <div class="image-lined">
+          <img
+            src="assets/step 02.png"
+            alt="thinking emoji (about story obviously)"
+            class="image-lined"
+          />
+          <p>DRAFT/WRITE THE STORY</p>
+        </div>
+
+        <div class="image-lined">
+          <img
+            src="assets/step 03.png"
+            alt="locking in on storyboarding (haha get it) and art"
+            class="image-lined"
+          />
+          <p>STORYBOARD! Draw</p>
+        </div>
+      </div>
+
+      <div class="image-row" style="padding-top: 50px">
+        <div class="image-lined">
+          <img
+            src="assets/step 04.png"
+            alt="locking in out on coding through Ren'Py"
+            class="image-lined"
+          />
+          <p>CODE IT USING REN'PY!</p>
+        </div>
+
+        <div class="image-lined">
+          <img
+            src="assets/step 05.png"
+            alt="Publish the visual novel on itch.io!"
+            class="image-lined"
+          />
+          <p>PUBLISH IT ON ITCH.IO!</p>
+        </div>
+
+        <div class="image-lined">
+          <img
+            src="assets/step 06.png"
+            alt="Raccoons talking about joining Hack Club Slack"
+            class="image-lined"
+          />
+          <p>SUBMIT & WIN A BIG IKEA PLUSHIE!</p>
+        </div>
+      </div>
 
       <a
         href="https://join.slack.com/t/hackclub/shared_invite/zt-3b5sak3xz-bFujFB5ciw1jnEDzfUEzAg"
       >
-        <img
-          src="assets/placeholder.jpg"
-          alt="Joining Hack Club Slack image"
-          class="small"
-        />
       </a>
 
-      <h2 class="bold" id="section-tutorial">TUTORIAL</h2>
+      <h2 class="header" id="section-tutorial">TUTORIAL</h2>
 
-      <h2 class="bold" id="section-example">EXAMPLE GAMES</h2>
+      <h2 class="header" id="section-example">EXAMPLE GAMES</h2>
 
-      <h2 class="bold" id="section-faq">FAQ</h2>
-      <p>hi how are we</p>
+      <h2 class="header" id="section-faq">FAQ</h2>
+      <p><a href="mailto:storyboard@hackclub.com">Contact Us!</a></p>
     </body>
   </html>
 </html>
