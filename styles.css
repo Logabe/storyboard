@@ -55,28 +55,6 @@ font-family: "Londrina Solid", sans-serif;
   font-style: italic;
 }  
 
-
-.small {
-  width: 150px;
-  height: auto;
-}
-
-.medium {
-  width: 300px;
-  height: auto;
-}
-
-.large {
-  width: 500px;
-  height: auto;
-}
-
-.logo{
-  width: 750px;
-  height: auto;
-  float:left;
-}
-
 .icon{
   width: 100px;
   height: auto;
@@ -84,18 +62,18 @@ font-family: "Londrina Solid", sans-serif;
 
 .boxed-text{
   border: 2px solid white;
-  padding: 10px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 1rem;
   display: inline-block;
   background-color: #9B81F0;
 }
 
 img.logo {
     float: left;
-    width: 1200px;
+    width: 60rem;
     height: auto;
-    padding-top: 20px;
-    padding-left: 100px;
+    padding-top: 1rem;
+    padding-left: 1rem;
   }
 
   .fit {
@@ -109,27 +87,49 @@ img.logo {
     font-family: "Londrina Solid";
     font-size: 80px;
     color: #242781;
-    padding-left: 100px;
+    padding-left: 2rem;
   }
 
   .spacer {
-    padding-left: 200px;
+    padding-left: 17rem;
+  } 
+
+  .topspace {
+    padding-top: 8rem;
   }
 
   h1 {
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 60px;
+    font-size: 55px;
     color: #242781;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #242781;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+    padding: 1em;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+    padding: 0.5em;
   }
 
   p {
@@ -138,7 +138,7 @@ img.logo {
     font-weight: 600;
     font-style: normal;
     color: black;
-    padding-left: 100px;
+    padding-left: 10rem;
   }
 
   .image-row {
@@ -166,3 +166,9 @@ img.logo {
     border-radius: 20px;
     background-color: #9b81f0;
   }
+
+  @media (max-width: 600px){
+  img.logo{
+    width: 120px;
+  }
+}
