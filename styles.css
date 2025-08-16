@@ -90,3 +90,79 @@ font-family: "Londrina Solid", sans-serif;
   background-color: #9B81F0;
 }
 
+img.logo {
+    float: left;
+    width: 1200px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 100px;
+  }
+
+  .fit {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .header {
+    font-weight: 300;
+    font-family: "Londrina Solid";
+    font-size: 80px;
+    color: #242781;
+    padding-left: 100px;
+  }
+
+  .spacer {
+    padding-left: 200px;
+  }
+
+  h1 {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+    color: #242781;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+  }
+
+  p {
+    font-size: 40px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    padding-left: 100px;
+  }
+
+  .image-row {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-lined img {
+    width: 450px;
+    height: auto;
+  }
+
+  .image-lined p {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #9b81f0;
+  }
