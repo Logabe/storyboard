@@ -87,7 +87,6 @@ img.logo {
     font-family: "Londrina Solid";
     font-size: 80px;
     color: #242781;
-    padding-left: 2rem;
   }
 
   .spacer {
@@ -96,6 +95,18 @@ img.logo {
 
   .topspace {
     padding-top: 8rem;
+  }
+
+  .leftspace {
+    padding-left: 5rem;
+  }
+
+  .rightspace {
+    padding-right: 5rem;
+  } 
+
+  .centerspace {
+    text-align: center;
   }
 
   h1 {
@@ -138,20 +149,25 @@ img.logo {
     font-weight: 600;
     font-style: normal;
     color: black;
-    padding-left: 10rem;
   }
 
   .image-row {
     display: flex;
     flex-wrap:wrap;
-    gap: 50px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
   }
 
   .image-lined img {
-    width: 450px;
+    width: 25rem;
     height: auto;
+  }
+
+  .image-bigger img {
+    width: 25.5rem;
+    height: auto;
+    padding-left: 1.5rem;
   }
 
   .image-lined p {
@@ -160,11 +176,37 @@ img.logo {
     font-family: "Marvel", sans-serif;
     font-weight: 400;
     font-style: normal;
+    word-wrap: break-word;
 
     color: white;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 1rem;
+    border-radius: 1.5rem;
     background-color: #9b81f0;
+  }
+
+    .image-bigger p {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-wrap: break-word;
+
+    color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #9b81f0;
+  }
+
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 
   @media (max-width: 600px){
