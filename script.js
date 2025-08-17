@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, {method: "POST", body: formData})
     .then((response) => {
         console.log("yaay");
-
+        form.reset();
     })
 
     .catch((error) => {

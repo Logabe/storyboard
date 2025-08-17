@@ -166,3 +166,53 @@ img.logo {
     border-radius: 20px;
     background-color: #9b81f0;
   }
+
+#signup {
+  padding-left:200px;
+
+}
+
+
+
+form {
+  display:flex;
+  padding:8px 14px;
+  /* background-color:blue; */
+  border-radius:10px;
+  border:2px solid rgb(149, 149, 149);
+  width: 30%;
+  gap:10px;
+  justify-content:space-between;
+
+
+
+}
+
+input {
+  border:none;
+  outline: none;
+}
+
+
+input[type="submit"] {
+  border-radius:50px;
+  background-color:#69D4FF;
+  padding:0rem 2rem;
+  font-size:1.5rem;
+  font-family: "Londrina Solid", sans-serif;
+  transition: all 300ms ease-in-out;
+  color:white;
+}
+
+input[type="submit"]:hover {
+  transform:scale(1.1);
+  background-color:#9B81F0;
+}
+
+input[type="email"] {
+  height:3rem;
+  font-size:1.2rem;
+  width:100%;
+  
+}
+
