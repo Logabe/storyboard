@@ -70,10 +70,16 @@ font-family: "Londrina Solid", sans-serif;
 
 img.logo {
     float: left;
-    width: 60rem;
+    width: 50rem;
     height: auto;
     padding-top: 1rem;
     padding-left: 1rem;
+    cursor:pointer;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  img.logo:hover {
+      transform:scale(1.1);
   }
 
   .fit {
@@ -172,33 +178,10 @@ img.logo {
     height: auto;
     cursor:pointer;
     transition: 
-      background-color 0.3s ease, transform 0.3s ease;
-    overflow:hidden;
+      background-color 0.3s ease, transform 0.3s ease;}
 
-   .btn before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.3) 0%,
-        rgba(255, 255, 255, 0.6) 50%,
-        rgba(255, 255, 255, 0.3) 100%
-      );
-      transform: skewX(-20deg);
-    }
-
-   .btn:before {
-      animation: shine 1s forwards;
-      transform: scale(1.1);}
-    }
-
-    @keyframes shine {
-      0%   { left: -75%; }
-      100% { left: 125%; }}
+  .btn:hover {
+      transform:scale(1.1)}
 
 
   @media (max-width: 600px){
