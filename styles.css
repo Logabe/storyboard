@@ -123,6 +123,14 @@ img.logo {
     text-align: center;
   }
 
+  .left{
+    float: left;
+  }
+
+  .right{
+    float: right;
+  }
+
   h1 {
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
@@ -145,7 +153,6 @@ img.logo {
     font-weight: 300;
     font-style: normal;
     color: #242781;
-    padding: 1em;
   }
 
   h4 {
@@ -154,11 +161,10 @@ img.logo {
     font-weight: 300;
     font-style: normal;
     color: #242781;
-    padding: 0.5em;
   }
 
   p {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Marvel", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -183,6 +189,21 @@ img.logo {
   .btn:hover {
       transform:scale(1.1)}
 
+  .slideshow {
+    display: flex;
+    align-items: left;
+  }
+
+  .slideshow iframe {
+  position: relative;
+  width: 40rem;
+  height: 22.5rem;
+  border: none;
+}
+
+.format{
+  max-width: 35rem;
+}
 
   @media (max-width: 600px){
   img.logo{
