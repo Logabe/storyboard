@@ -97,6 +97,14 @@ img.logo {
     padding-top: 8rem;
   }
 
+  .smalltopspace {
+    padding-top: 4rem;
+  }
+
+  .medtopspace {
+    padding-top: 6rem;
+  }
+
   .leftspace {
     padding-left: 5rem;
   }
@@ -154,7 +162,7 @@ img.logo {
   .image-row {
     display: flex;
     flex-wrap:wrap;
-    gap: 1.2rem;
+    gap: 1.1rem;
     align-items: center;
     justify-content: center;
   }
@@ -162,40 +170,35 @@ img.logo {
   .btn img {
     width: 25rem;
     height: auto;
-  }
-
-  .btn p {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Marvel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    word-wrap: break-word;
-
-    color: white;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    background-color: #9b81f0;
-
     cursor:pointer;
     transition: 
       background-color 0.3s ease, transform 0.3s ease;
-  }
+    overflow:hidden;
 
-  .btn p:hover {
-    background-color: #5e41b4;
-    transform: scale(1.05);}
+   .btn before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+      transform: skewX(-20deg);
+    }
 
+   .btn:before {
+      animation: shine 1s forwards;
+      transform: scale(1.1);}
+    }
 
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
+    @keyframes shine {
+      0%   { left: -75%; }
+      100% { left: 125%; }}
 
 
   @media (max-width: 600px){
