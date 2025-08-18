@@ -154,23 +154,17 @@ img.logo {
   .image-row {
     display: flex;
     flex-wrap:wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     align-items: center;
     justify-content: center;
   }
 
-  .image-lined img {
+  .btn img {
     width: 25rem;
     height: auto;
   }
 
-  .image-bigger img {
-    width: 25.5rem;
-    height: auto;
-    padding-left: 1.5rem;
-  }
-
-  .image-lined p {
+  .btn p {
     text-align: center;
     font-size: 40px;
     font-family: "Marvel", sans-serif;
@@ -182,21 +176,15 @@ img.logo {
     padding: 1rem;
     border-radius: 1.5rem;
     background-color: #9b81f0;
+
+    cursor:pointer;
+    transition: 
+      background-color 0.3s ease, transform 0.3s ease;
   }
 
-    .image-bigger p {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Marvel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    word-wrap: break-word;
-
-    color: white;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    background-color: #9b81f0;
-  }
+  .btn p:hover {
+    background-color: #5e41b4;
+    transform: scale(1.05);}
 
 
   .video-container {
@@ -208,6 +196,7 @@ img.logo {
     margin-right: auto;
     width: 80%;
   }
+
 
   @media (max-width: 600px){
   img.logo{
