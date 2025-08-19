@@ -187,7 +187,9 @@ img.logo {
       background-color 0.3s ease, transform 0.3s ease;}
 
   .btn:hover {
-      transform:scale(1.1)}
+      transform:scale(1.1) rotate(-2deg);
+      filter:hue-rotate(15deg);
+    }
 
   .slideshow {
     display: flex;
@@ -203,6 +205,12 @@ img.logo {
 
 .format{
   max-width: 35rem;
+}
+
+.format-center{
+  padding-left: 8rem;
+  padding-right: 8rem;
+ text-align:center;
 }
 
 iframe{
