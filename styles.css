@@ -121,6 +121,7 @@ img.logo {
 
   .centerspace {
     text-align: center;
+    justify-content: center;
   }
 
   .left{
@@ -135,7 +136,7 @@ img.logo {
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 55px;
+    font-size: 52px;
     color: #242781;
   }
 
@@ -169,6 +170,54 @@ img.logo {
     font-weight: 600;
     font-style: normal;
     color: black;
+  }
+
+  .email-form {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    align-self:center;
+  }
+
+  .email-form input[type="email"] {
+    padding: 0.6em;
+    border: 0.1rem solid #9b59b6; 
+    border-radius: 1rem;
+    font-size: 24px;
+    font-family: "Marvel";
+    width: 26rem;
+  }
+
+  .submit-btn {
+    background-color: #9b59b6; 
+    color: white;
+    border: none;
+    padding: 0.7rem 2.3rem;
+    text-transform:uppercase;
+    border-radius: 1rem;
+    font-size: 36px;
+    font-family:"Marvel";
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #ad0ca8;
+    transform: scale(1.2);
+  }
+
+  .form-row{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    text-align:center;
+    justify-content:center;
+  } 
+
+  .form-label{
+    display:block;
+    margin-bottom:2rem;
+    text-transform:uppercase;
   }
 
   .image-row {
