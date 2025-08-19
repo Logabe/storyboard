@@ -56,8 +56,8 @@ font-family: "Londrina Solid", sans-serif;
 }  
 
 .icon{
-  width: 100px;
-  height: auto;
+  width: 40rem;
+  justify-content: left;
 }
 
 .boxed-text{
@@ -77,7 +77,7 @@ font-family: "Londrina Solid", sans-serif;
   .header {
     font-weight: 300;
     font-family: "Londrina Solid";
-    font-size: 80px;
+    font-size: 70px;
     color: #242781;
   }
 
@@ -90,11 +90,11 @@ font-family: "Londrina Solid", sans-serif;
   }
 
   .smalltopspace {
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
 
   .medtopspace {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
 
   .leftspace {
@@ -158,6 +158,18 @@ font-family: "Londrina Solid", sans-serif;
     color: black;
   }
 
+  .small{
+    font-size:24px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 600;
+    font-style:italic;
+    color:black;
+  }
+
+  .tight{
+    line-height:0.2;
+  }
+
   .email-form {
     display: flex;
     align-items: center;
@@ -171,7 +183,9 @@ font-family: "Londrina Solid", sans-serif;
     border-radius: 1rem;
     font-size: 24px;
     font-family: "Marvel";
-    width: 26rem;
+    width: 28rem;
+    border-radius:1.3rem;
+    box-shadow: 0.15em 0.3em rgb(189, 154, 255);
   }
 
   .submit-btn {
@@ -180,8 +194,8 @@ font-family: "Londrina Solid", sans-serif;
     border: none;
     padding: 0.7rem 2.3rem;
     text-transform:uppercase;
-    border-radius: 1rem;
-    font-size: 36px;
+    border-radius: 1.3rem;
+    font-size: 34px;
     font-family:"Marvel";
     cursor: pointer;
     transition: all 0.3s ease;
@@ -226,6 +240,18 @@ font-family: "Londrina Solid", sans-serif;
       filter:hue-rotate(15deg);
     }
 
+  .enlarge{
+    display:inline-block;
+    cursor:pointer;
+    transition: color 0.3s ease, transform 0.3s ease-in-out;
+  }
+
+  .enlarge:hover {
+    transform:
+      scale(1.1); 
+    color: #4C56DF;
+  }
+
   .slideshow {
     display: flex;
     align-items: left;
@@ -245,6 +271,7 @@ font-family: "Londrina Solid", sans-serif;
 .format-center{
   padding-left: 8rem;
   padding-right: 8rem;
+ justify-content:center;
  text-align:center;
 }
 
@@ -260,6 +287,7 @@ iframe:hover{
 .float{ 
   display:inline-block;
   animation:updown 3s ease-in-out infinite;}
+
 @keyframes updown{
   0% {transform: translateY(0);}
   50% {transform: translateY(-1rem);}
@@ -274,6 +302,17 @@ img.logo {
     padding-left: 1rem;
   }
 
+
+  .text-box{ 
+    background-color:#242781;
+    border-radius:1rem;
+    margin:3rem;
+    padding:2rem;
+    width:35rem;}
+    
+.white-text{
+  color:#c4c4c4;
+}
   @media (max-width: 600px){
   img.logo{
     width: 120px;
