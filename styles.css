@@ -56,7 +56,8 @@ font-family: "Londrina Solid", sans-serif;
 }  
 
 .icon{
-  width: 40rem;;
+  width: 40rem;
+  height:25rem;
 }
 
 .boxed-text{
@@ -290,7 +291,7 @@ iframe:hover{
 }
 
 .float{ 
-  display:inline-block;
+  display:block;
   animation:updown 3s ease-in-out infinite;}
 
 @keyframes updown{
@@ -314,14 +315,29 @@ img.logo {
     margin:2.5rem;
     padding:2rem;
     height:20rem;
-    width:36rem;}
+    width:34rem;}
     
 .white-text{
   color:#c9cbf3;
 }
+
+
+.column{
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content:center;
+  float:center;
+  width:3.5rem;
+  height:3.5rem;
+
+}
+
+.round{
+  border-radius:10rem;
+}
+
   @media (max-width: 600px){
   img.logo{
     width: 120px;
   }
 }
-
