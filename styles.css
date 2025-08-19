@@ -312,7 +312,7 @@ img.logo {
   .text-box{ 
     background-color:#242781;
     border-radius:1rem;
-    margin:2.5rem;
+    margin:2rem;
     padding:2rem;
     height:20rem;
     width:34rem;}
@@ -338,6 +338,6 @@ img.logo {
 
   @media (max-width: 600px){
   img.logo{
-    width: 120px;
+    width: fit-screen;
   }
 }
