@@ -56,8 +56,7 @@ font-family: "Londrina Solid", sans-serif;
 }  
 
 .icon{
-  width: 40rem;
-  justify-content: left;
+  width: 40rem;;
 }
 
 .boxed-text{
@@ -110,12 +109,18 @@ font-family: "Londrina Solid", sans-serif;
     justify-content: center;
   }
 
+  .bottomspace{
+    padding-top: 5rem;
+  }
+
   .left{
     float: left;
+    justify-content: left;
   }
 
   .right{
     float: right;
+    justify-content: right;
   }
 
   h1 {
@@ -306,9 +311,10 @@ img.logo {
   .text-box{ 
     background-color:#242781;
     border-radius:1rem;
-    margin:3rem;
+    margin:2.5rem;
     padding:2rem;
-    width:35rem;}
+    height:20rem;
+    width:36rem;}
     
 .white-text{
   color:#c9cbf3;
