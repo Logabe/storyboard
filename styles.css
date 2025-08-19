@@ -74,6 +74,9 @@ font-family: "Londrina Solid", sans-serif;
     object-fit: cover;
   }
 
+  .marginless{ 
+    margin:0 auto;
+  }
   .header {
     font-weight: 300;
     font-family: "Londrina Solid";
@@ -116,24 +119,33 @@ font-family: "Londrina Solid", sans-serif;
 
   .left{
     float: left;
-    justify-content: left;
   }
 
   .right{
     float: right;
-    justify-content: right;
+  }
+
+  .gap{
+    gap:1rem;
+    padding-right:3rem;
+  }
+
+  .container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   h1 {
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 52px;
+    font-size: 50px;
     color: #242781;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 45px;
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -291,7 +303,6 @@ iframe:hover{
 }
 
 .float{ 
-  display:block;
   animation:updown 3s ease-in-out infinite;}
 
 @keyframes updown{
@@ -336,8 +347,115 @@ img.logo {
   border-radius:10rem;
 }
 
-  @media (max-width: 600px){
+html, body{ 
+  max-width:100vw;
+  overflow-x:hidden;
+}
+
+
+@media (max-width: 600px){
+
   img.logo{
-    width: fit-screen;
+    width:90vw;
+    height:auto; 
+    display:block;
+    padding-top: 1rem; 
+    margin: 0 auto;
   }
+
+  h1 {   
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 52px;
+    color: #242781;
+  } 
+
+ h2 {
+    font-size: 30px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+
+    white-space:normal;
+    word-break:break-word;
+    margin:0 auto;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #242781;
+  }
+
+   p {
+    font-size: 30px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+  }
+
+  .centerspace,
+  .logo,
+  .image-row,
+  .format-center,
+  .slideshow,
+  .email-form,
+  .form-row{ 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    width:100vw;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftspace { 
+    justify-content:center;
+    text-align:center;
+    margin:0 auto;
+    padding:0;
+  }
+
+  .medtopspace,
+  .topspace { 
+    padding-top: 1em;
+  }
+
+
+  html, body{ 
+  max-width:100vw;
+  overflow-x:hidden;
+  align-items:center; 
+  justify-content:center;
+  display:flex; 
+  margin:0; 
+  padding:0; 
+  flex-direction:column;
+}
+
+
+} 
+
+@media ((min-width:768px max-width:991px)) {
+
+
+
 }
