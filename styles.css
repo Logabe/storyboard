@@ -173,7 +173,6 @@ font-family: "Londrina Solid", sans-serif;
   .email-form {
     display: flex;
     align-items: center;
-    gap: 10px; 
     align-self:center;
   }
 
@@ -192,6 +191,7 @@ font-family: "Londrina Solid", sans-serif;
     background-color: #9B81F0; 
     color: white;
     border: none;
+    position:relative;
     padding: 0.7rem 2.3rem;
     text-transform:uppercase;
     border-radius: 1.3rem;
@@ -311,7 +311,7 @@ img.logo {
     width:35rem;}
     
 .white-text{
-  color:#c4c4c4;
+  color:#c9cbf3;
 }
   @media (max-width: 600px){
   img.logo{
