@@ -119,6 +119,22 @@ font-family: "Londrina Solid", sans-serif;
     justify-content:center;
   }
 
+  .smallgap{
+    gap:3em;
+  }
+
+  .pop{
+    display:inline-block;
+    cursor:pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .pop:hover {
+    transform:
+      scale(1.2); 
+  }
+
+
   h1 {
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
@@ -272,8 +288,6 @@ font-family: "Londrina Solid", sans-serif;
     transform: scale(1.2);
   }
 
-  
-
   .form-label{
     display:block;
     margin-bottom:2rem;
@@ -283,7 +297,6 @@ font-family: "Londrina Solid", sans-serif;
   .image-row {
     display: flex;
     flex-wrap:wrap;
-    /* gap: 1.1rem; */
     align-items: center;
     justify-content: center;
     text-align:center;
@@ -299,7 +312,19 @@ font-family: "Londrina Solid", sans-serif;
 
   .btn:hover {
       transform:scale(1.1) rotate(-2deg);
-      filter:hue-rotate(15deg);
+      filter:hue-rotate(20deg);
+    }
+  
+  .slide img {
+    width: 22rem;
+    height: auto;
+    cursor:pointer;
+    transition: 
+      background-color 0.3s ease, transform 0.3s ease;}
+
+  .slide:hover {
+      transform:scale(1.03) rotate(1deg);
+      filter:hue-rotate(40deg);
     }
 
   .enlarge{
@@ -400,12 +425,38 @@ img.logo {
 
 }
 
-.round{
-  border-radius:10rem;
+.circle{
+  width: 4.3rem;
+  height: 4.3rem;
+  margin:0.2em;
+  border-radius: 50%; 
+  object-fit: cover;
 }
 
+.circle-container {
+  position: relative;
+  display: inline-block; 
+  align-items:center;
+  justify-content:center;
 
+}
 
+.circle-text{
+  position: absolute;
+  font-family:"Marvel","sans-serif";
+  bottom: -2rem;      
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  color: #4C56DF;
+  font-size: 1.5em;
+  white-space: nowrap;
+  opacity: 0;      
+  transition: opacity 0.3s ease;
+  pointer-events: none;}
+
+.circle-container:hover .circle-text {
+  opacity: 1;  }
 
 @media (max-width: 600px){
 
