@@ -235,8 +235,20 @@ font-family: "Londrina Solid", sans-serif;
     margin: 6rem 2rem;
   }
 
+  .rotate{
+    cursor:pointer;
+    transition: 
+      background-color 0.3s ease, transform 0.3s ease;
+    }
+
+  .rotate:hover {
+      transform:scale(1.15) rotate(-2deg);
+      filter:hue-rotate(50deg);
+
+  }
+
   .card {
-    padding:1rem;
+    padding:0.8rem;
   }
   a {
     color:#242781;
@@ -359,9 +371,8 @@ iframe {
   align-items:center;
   gap:1rem;
   padding:1rem;
-  
-
 }
+
 
 .purple {
   background-color:#242781;
