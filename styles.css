@@ -242,8 +242,6 @@ font-family: "Londrina Solid", sans-serif;
 
   .rotate:hover {
       transform:scale(1.15) rotate(-2deg);
-      filter:hue-rotate(50deg);
-
   }
 
   .card {
