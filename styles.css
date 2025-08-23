@@ -113,12 +113,15 @@ font-family: "Londrina Solid", sans-serif;
     padding-right:3rem;
   }
 
-  .container{
+  .container.heading{
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     margin-bottom:-1rem;
+    padding:10px 20px;
   }
+
+
 
   .smallgap{
     gap:3em;
@@ -504,6 +507,32 @@ img.logo {
     padding:2rem;
     bottom:15px;
   }
+
+ 
+  .theme{
+  font-family:"Marvel","sans-serif";
+  bottom: -2rem;      
+  left: 50%;
+  background: #9B81F0;
+  padding: 0.5em;
+  padding-inline: 1.5em;
+  border-radius:1em;
+  color: #eff0ff;
+  font-size: 3em; 
+  }
+
+    .theme-btn{
+    cursor:pointer;
+    transition: background-color 1.0s ease transform 1.0s ease-in-out;
+  }
+
+  .theme-btn:hover {
+    transform:
+      scale(1.2);
+       filter:hue-rotate(40deg);
+       
+  }
+  
 
 @media (max-width: 600px){
 
