@@ -4,6 +4,6 @@ form.addEventListener("submit", (e) => {
 
     const email = document.getElementById("email").value;
 
-    window.location.href = "https://forms.hackclub.com/story?email=" + encodeURIComponent(email);
+    window.location.href = "https://forms.hackclub.com/story?email=" + (email);
 });
 
