@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, {method: "POST", body: formData})
     .then((response) => {
         console.log("yaay");
-        alert("Emailed address submitted! Expect a email shortly");
+        alert("Emailed address submitted! We'll send you an email shortly");
     })
 
     .catch((error) => {
