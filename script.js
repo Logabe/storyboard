@@ -5,14 +5,17 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     var formData = new FormData(form);
+    form.reset();
 
     fetch(scriptURL, {method: "POST", body: formData})
     .then((response) => {
         console.log("yaay");
-        form.reset();
+        alert("Emailed address submitted! Expect a email shortly");
     })
 
     .catch((error) => {
         console.log("boooo");
+        alert("Looks like your email didn't submit, please try again :)");
+
     });
 })
