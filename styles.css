@@ -329,36 +329,41 @@ font-family: "Londrina Solid", sans-serif;
 
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width:95%;
-
-    /* text-align:center; */
+    grid-template-columns: repeat(3, 1fr);
   }
 
 
   .btn img {
     margin:10px;
-    width: 250px;
+    width:26vw;
+    max-width:24rem;
     cursor:pointer;
     transition: 
     background-color 0.3s ease, transform 0.3s ease;
     }
 
-  @media(min-width:1200px){
-    .image-grid{
-  
-      width:80%;
-      max-width:1500px;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+@media(max-width:800px){
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
 
+  }
 
-    }
-
-    .btn img {
-      width:400px;
-    }
+  .btn img {
+    width:40vw;
+    max-width:30rem;
+  }
 }
 
+@media(max-width:490px){
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .btn img {
+    width:80%;
+  }
+}
   .btn:hover {
       transform:scale(1.1) rotate(-2deg);
       filter:hue-rotate(20deg);
