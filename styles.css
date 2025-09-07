@@ -184,12 +184,10 @@ font-family: "Londrina Solid", sans-serif;
     padding:1rem;
   }
 
-  .small{
+  .small {
     font-size:24px;
-    font-family: "Marvel", sans-serif;
-    font-weight: 600;
-    font-style:italic;
-    color:black;
+    padding:0;
+    
   }
   
 
@@ -442,7 +440,7 @@ iframe{
 }
 
 iframe:hover{
-    transform:scale(1.1)
+    transform:scale(1.05)
 }
 
 .float{ 
@@ -497,25 +495,37 @@ img.logo {
   margin:0.2em;
   border-radius: 50%; 
   object-fit: cover;
-}
+    border:dashed 3px #c9cbf3;
+    background-color:#4C56DF;
 
+}
+.team {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  row-gap:2rem;
+  column-gap:4px;
+  align-items:center;
+  padding-bottom:3rem;
+}
 .circle-container {
   position: relative;
-  display: inline-block; 
+  display:flex;
   align-items:center;
   justify-content:center;
-
+  
 }
 
 .circle-text{
   position: absolute;
   font-family:"Marvel","sans-serif";
-  bottom: -2rem;      
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.7);
+  transform:translateY(65px);
+  
+
+
+  /* background: rgba(255, 255, 255, 0.7); */
   color: #4C56DF;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   white-space: nowrap;
   opacity: 0;      
   transition: opacity 0.3s ease;
@@ -534,22 +544,21 @@ img.logo {
  
   .theme{
   font-family:"Marvel","sans-serif";
-  bottom: -2rem;      
-  left: 50%;
   background: #9B81F0;
   padding: 0.5em;
   padding-inline: 1.5em;
-  border-radius:1em;
+  border-radius:100vw;
   color: #eff0ff;
-  font-size: 3em; 
+  cursor:pointer;
+  transition: all 400ms ease-in-out;
+  border:dashed 5px #eac4f3;
+  font-size:clamp(1.5rem,2.6vw,3rem);
+  margin:1rem;
+  /* font-size: 3em;  */
   }
 
-    .theme-btn{
-    cursor:pointer;
-    transition: background-color 1.0s ease transform 1.0s ease-in-out;
-  }
 
-  .theme-btn:hover {
+  .theme:hover {
     transform:
       scale(1.2);
        filter:hue-rotate(40deg);
@@ -578,7 +587,9 @@ img.logo {
     background-size: cover;
   }
 @media (max-width: 600px){
-
+  #tentacle-cat{
+    width:100px;
+  }
   #cat1 {
     display:none;
   }
@@ -614,6 +625,9 @@ img.logo {
 
 
 @media (max-width:800px){
+  #tentacle-cat{
+    display:none;
+    }
   nav {
     display:none;
   }
@@ -625,9 +639,15 @@ img.logo {
 
 }
 
-
+@media (max-width:1000px){
+   #tentacle-cat{
+    display:none;
+    }
+}
 
 @media (max-width:1200px){
+  #tentacle-cat{
+  width:200px    }
  nav {
   display:none;
  }
