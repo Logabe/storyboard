@@ -233,18 +233,22 @@ font-family: "Londrina Solid", sans-serif;
     justify-content:center;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap:20px;
-    margin: 3rem 1rem;
+    margin: 0.5rem 1rem;
     width:90%;max-width:1600px;
   }
 
-  .rotate{
+  .rotateR, .rotateL{
     cursor:pointer;
     transition: 
-      background-color 0.3s ease, transform 0.3s ease;
+    background-color 0.3s ease, transform 0.3s ease;
     }
 
-  .rotate:hover {
+  .rotateR:hover {
       transform:scale(1.15) rotate(-2deg);
+  }
+
+  .rotateL:hover {
+      transform:scale(1.15) rotate(2deg);
   }
 
   .card {
