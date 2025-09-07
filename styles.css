@@ -118,7 +118,7 @@ font-family: "Londrina Solid", sans-serif;
     align-items:center;
     justify-content:space-between;
     margin-bottom:-1rem;
-    padding:10px 20px;
+    padding:10px px;
   }
 
 
@@ -327,7 +327,7 @@ font-family: "Londrina Solid", sans-serif;
     text-transform:uppercase;
   }
 
-  .image-grid {
+.image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -342,6 +342,7 @@ font-family: "Londrina Solid", sans-serif;
     background-color 0.3s ease, transform 0.3s ease;
     }
 
+  
 @media(max-width:800px){
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -456,7 +457,7 @@ iframe:hover{
 
 img.logo {
     float: left;
-    width: 50rem;
+    width: 45rem;
     max-width:100%;
     height: auto;
     padding-top: 1rem;
@@ -566,16 +567,6 @@ img.logo {
     text-align: center;
     position: relative; 
     overflow: hidden;   
-  }
-
-  .landing-page::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: url("assets/tear paper.png") no-repeat bottom center;
-    background-size: cover;
   }
 @media (max-width: 600px){
 
