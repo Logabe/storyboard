@@ -113,12 +113,11 @@ font-family: "Londrina Solid", sans-serif;
     padding-right:3rem;
   }
 
-  .container {
+  .container .heading{
     display:flex;
-    /* width:90%; */
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
     margin-bottom:-1rem;
     padding:10px 20px;
   }
