@@ -113,11 +113,10 @@ font-family: "Londrina Solid", sans-serif;
     padding-right:3rem;
   }
 
-  .container .heading{
+  .container.heading{
     display:flex;
-    flex-wrap:wrap;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     margin-bottom:-1rem;
     padding:10px 20px;
   }
@@ -458,8 +457,8 @@ iframe:hover{
 }
 
 img.logo {
-    /* float: left; */
-    width: 45rem;
+    float: left;
+    width: 40rem;
     max-width:100%;
     height: auto;
     padding-top: 1rem;
@@ -565,7 +564,7 @@ img.logo {
 
   .theme:hover {
     transform:
-      scale(1.07);
+      scale(1.2);
        filter:hue-rotate(40deg);
        
   }
