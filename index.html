@@ -32,7 +32,6 @@
   
 
 <body>
-
   
   <section class="landing-page">
     <div class="container">
@@ -42,7 +41,7 @@
       title="Get FREE Prizes by Making a VISUAL NOVEL?" frameborder="0" 
       style="border:solid 3px #9B81F0;border-radius:1rem;max-width:94%;flex-grow:1;"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true">
       </iframe>
       <!-- <nav>
       <h2 style="font-family:'Marvel'">
@@ -75,7 +74,7 @@
 
 <section id="section-steps">
 
-  <h2 class="header"data-aos="fade-up" >HOW DOES STORYBOARD WORK?</h2>
+  <h2 class="header" data-aos="fade-up" >HOW DOES STORYBOARD WORK?</h2>
   <p data-aos="fade-up">  Track your art and coding hours, create a visual novel based on a new genre every month, and get cool prizes</p>
 
   <div class="image-grid" >
@@ -136,14 +135,23 @@
 
 </section>
 
-<section id="section-tiers" >
+<section id="section-tiers" style="position:relative; padding-top:2rem;">
+
   <h2 class="header"> RANKS</h2>
   <p style="padding:0;">Depending on the number of hours spent and quality of product, you can get different prizes!</p>
   <div class="tier">
   <div class="card">
+    <div id="hover">
     <img src="assets/apprentice.png" style="width:95%" class="rotateR" >
+
+    </div>
     <h2>APPRENTICE</h2>
-    <p>Spend 3+ hours making a visual novel, get this month's custom stickers</p>
+    <p>Spend 3+ hours making a visual novel, get this month's custom 
+      <span style="cursor:pointer;"> <a id="click_me" >
+      stickers (click to view)
+      </a>
+    </span></p>
+  
   </div>
   <div class="card">
     <img src="assets/spellcaster.png" style="width:95%" class="rotateL">
@@ -153,14 +161,22 @@
   <div class="card">
     <img src="assets/mage.png" style="width:95%" class="rotateR">
     <h2>MAGE</h2>
-    <p>Spend 30+ hours of quality work, get a <a href= "https://store.steampowered.com/sub/163632/">STEAM LICENSE</a></p>
+    <p>Spend 30+ hours of quality work, get a <a href= "https://store.steampowered.com/sub/163632/" >STEAM LICENSE</a></p>
   </div>
   <div class="card">
     <img src="assets/archmage.png" style="width:95%" class="rotateL">
     <h2>ARCHMAGE</h2>
-    <p>Spend 50+ hours of quality work, get a <a href="https://www.amazon.com/XP-PEN-Artist12-Battery-Free-Multi-Function-Sensitivity/dp/B07GNK18VJ/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70%3Aamzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70&crid=23X9S0ASB72QX&cv_ct_cx=drawing%2Btablet&keywords=drawing%2Btablet&pd_rd_i=B07GNK18VJ&pd_rd_r=ed1f0e39-877f-4aab-86fc-3dd791fc6ced&pd_rd_w=1h2b4&pd_rd_wg=jRodZ&pf_rd_p=5a2f80d8-3686-499a-bbaa-70664bd0de70&pf_rd_r=T5AKTKZY2HANXQN2GCB4&qid=1755914944&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=drawing%2Btable%2Caps%2C103&sr=1-1-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" class="emphasize"> DRAWING TABLET </a></p>
+    <p>Spend 50+ hours of quality work, get a <a href="https://www.amazon.com/XP-PEN-Artist12-Battery-Free-Multi-Function-Sensitivity/dp/B07GNK18VJ/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70%3Aamzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70&crid=23X9S0ASB72QX&cv_ct_cx=drawing%2Btablet&keywords=drawing%2Btablet&pd_rd_i=B07GNK18VJ&pd_rd_r=ed1f0e39-877f-4aab-86fc-3dd791fc6ced&pd_rd_w=1h2b4&pd_rd_wg=jRodZ&pf_rd_p=5a2f80d8-3686-499a-bbaa-70664bd0de70&pf_rd_r=T5AKTKZY2HANXQN2GCB4&qid=1755914944&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=drawing%2Btable%2Caps%2C103&sr=1-1-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" 
+      > DRAWING TABLET </a></p>
   </div>
 </div>
+
+<div id="sticker_sheet" style="position:absolute;display:none;background-color:rgba(255, 255, 255, 0.425); flex-direction:column;justify-content: center;align-items:center; 
+z-index:1000; width:100%;height:100%; backdrop-filter: blur(20px);padding:2rem;">
+  <img src="assets/sticker-sheet.png" style="width:450px;max-width:80%;padding:1rem;">
+  <p>click anywhere to exit</p>
+</div> 
+
 </section>
   <section id="section-tutorial" style="gap:5rem;">
     <div data-aos="fade-up">
@@ -173,7 +189,7 @@
       <h2> #1: WRITING A STORY</h2> 
       <p></p>
     </div>
-    <iframe loading=lazy 
+    <iframe loading="lazy" 
           src="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
           allowfullscreen="true" 
           mozallowfullscreen="true" 
@@ -194,7 +210,7 @@
     <iframe 
         loading="lazy" 
         src="https://www.canva.com/design/DAGwtXqXZN8/HHoaf96sGiy_DKhEbR-dNw/view?embed" 
-        allowfullscreen="allowfullscreen" 
+        allowfullscreen="true" 
         allow="fullscreen">
   </iframe>
   </div>
@@ -205,7 +221,7 @@
       <p> New to coding? Ren'py makes it super easy!
         <br>Check out <a href="https://www.renpy.org/doc/html/quickstart.html" class="emphasize"> RENPY QUICKSTART </a> for a non-slideshow tutorial</p>  
     </div>
-     <iframe loading=lazy 
+     <iframe loading="lazy"
         src="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
         allowfullscreen="true" 
         mozallowfullscreen="true" 
@@ -221,7 +237,7 @@
         <a href="https://reddit.com" target="_blank" class="emphasize"> Reddit</a><br> 
         3. Submit link to your post <br> 4. Get your prize! </p>
     </div>
-    <iframe loading=lazy 
+    <iframe loading="lazy" 
           src="https://docs.google.com/presentation/d/e/2PACX-1vTaK4_94OMLMlhZ6nfoUnLDJfQBc1mGVFsUa7D9aQZaNLYXMWnGWpw7gflQwYLAG18MihnZ6S3DtkRe/pubembed?start=false&loop=false&delayms=60000"
           allowfullscreen="true" 
           mozallowfullscreen="true" 
@@ -237,7 +253,7 @@
 
 <section id="section-example" style="gap:3rem">
   <div>
-    <h2 class="header ">EXAMPLE GAMES</h2>
+    <h2 class="header">EXAMPLE GAMES</h2>
     <p> All made with Ren'Py! </p>
   </div>
   
@@ -248,7 +264,7 @@
     title="YouTube video player of Slay the Princess" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe> 
+    allowfullscreen="true"></iframe> 
 
     <div class="format purple"> 
       <h2 class="white-text">SLAY THE PRINCESS</h2>
@@ -274,7 +290,7 @@
 
   <div class="stack">
 
-    <iframe  src="https://www.youtube.com/embed/kB1663FTpzU?si=TxjCEigLlFWz1qDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe  src="https://www.youtube.com/embed/kB1663FTpzU?si=TxjCEigLlFWz1qDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
    
     <div class="format purple"> 
       <h2 class="white-text">DOKI DOKI LITERATURE CLUB</h2>
@@ -290,7 +306,9 @@
 <section id="section-faq" style="position:relative;" class="landing-page">
   <h2 class="header">FAQ</h2>
   <iframe frameborder="0" src="https://itch.io/embed-upload/14738959?color=333333" 
-  allowfullscreen="" style="width:1200px;max-width:94%;aspect-ratio: 2/1.2;height:auto;"><a href="https://alicesun.itch.io/storyboard-faq">Play Storyboard FAQ on itch.io</a></iframe>
+  allowfullscreen="true" style="width:1200px;max-width:94%;aspect-ratio: 2/1.2;height:auto;">
+    <a href="https://alicesun.itch.io/storyboard-faq">Play Storyboard FAQ on itch.io</a>
+  </iframe>
   <p style="font-size:24px;">Questions? Contact <a href="mailto:storyboard@hackclub.com" style="color:rgb(155, 99, 220)">renran@hackclub.com</a> <br> This website is also <a href="https://github.com/hackclub/storyboard" style="color:rgb(155, 99, 220)">open source</a></p>
 
   <p class="small">MADE BY TEENAGERS FOR TEENAGERS</p>
@@ -340,5 +358,6 @@
     AOS.init();
   </script>
 <script src="script.js"></script> 
+
 </body>
 </html>

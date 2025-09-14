@@ -6,6 +6,7 @@ html, body {
   display:flex; 
   margin:0; 
   flex-direction:column;
+  scroll-behavior: smooth;
 
 }
 
@@ -260,9 +261,8 @@ html, body {
       color:#9B81F0;
   }
 
-
 iframe{
-  position: relative;
+  /* position: relative; */
   width: 40rem;  
   height: 22.5rem;
   border: none;
@@ -274,6 +274,7 @@ iframe{
 iframe:hover{
   transform:scale(1.05)
 }
+
 
 .format{
   max-width: 35rem;
@@ -298,6 +299,7 @@ iframe:hover{
 .float{ 
   animation:updown 3s ease-in-out infinite;
 }
+
 
 @keyframes updown{
   0% {transform: translateY(0);}
@@ -351,6 +353,7 @@ img.logo {
   column-gap:4px;
   align-items:center;
   padding-bottom:3rem;
+
 }
 .circle-container {
   position: relative;
@@ -442,7 +445,7 @@ img.logo {
     width: 100%;
     background: url("assets/tear paper.png") no-repeat bottom center;
     background-size: cover;
-  }
+  } */
 
 
 /* media queries */
