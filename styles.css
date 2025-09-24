@@ -263,9 +263,9 @@ html, body {
   }
 
 iframe{
-  /* position: relative; */
-  width: 40rem;  
-  /* height: 22.5rem; */
+
+  width:40rem;
+  max-width:50vw;
   aspect-ratio:5/2.85;
   border: none;
   border-radius:0.5rem;
@@ -280,8 +280,9 @@ iframe:hover{
 
 
 .format{
-  max-width: 35rem;
-  width:35vw;
+  /* width:35vw; */
+  max-width: 100%;
+
   /* min-height:fit-content; */
   margin:1rem;
   display: flex;
@@ -319,7 +320,7 @@ iframe:hover{
   gap:10px; 
   width:100%;
   text-align:left;
-  height:14rem;
+  height:auto;
   min-height:fit-content;
   max-width:100%;
 
@@ -560,6 +561,9 @@ img.logo {
     display:none;
   }
 
+  .format {
+    width:35vw;
+  }
   
 }
 
