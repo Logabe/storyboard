@@ -41,6 +41,7 @@ html, body {
   h1 {
 
     font-size: 50px;
+    max-width:95%;
     /* text-shadow:-1px -1px 0 white, 1px -1px 0 white, -1px  1px 0 white, 1px  1px 0 white;  */
     text-shadow: 0px 0px 4px white;
   }
@@ -63,7 +64,7 @@ html, body {
     font-family: "Marvel", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: black;
+    /* color: black; */
     padding:1rem;
   }
 
@@ -79,11 +80,12 @@ html, body {
   
 
   section {
-    width:100vw;
-    text-align:center;
+    width:90%;
     display:flex;
     flex-direction:column;
+    text-align:center;
     gap:1rem;
+    /* background-color:red; */
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position:center; */
@@ -107,11 +109,11 @@ html, body {
   
   .tier {
     display:grid;
-    justify-content:center;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    justify-items:center;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap:20px;
     margin: 0.5rem 1rem;
-    width:90%;max-width:1600px;
+    width:80%;max-width:1600px;
   }
 
   .rotateR, .rotateL{
@@ -130,6 +132,9 @@ html, body {
 
   .card {
     padding:0.8rem;
+    max-width:250px;
+    max-width:95%;
+
   }
   
   .email-form {
@@ -144,7 +149,7 @@ html, body {
   }
 
   
-  .email-form input[type="email"] {
+  .email-form input[type="email"]  {
     padding: 0.6em;
     border: 0.1rem solid #9b59b6; 
     border-radius: 1rem;
@@ -156,7 +161,9 @@ html, body {
     border-radius:1.3rem;
     box-shadow: 0.15em 0.3em rgb(189, 154, 255);
   }
-
+.email-form input[type="email"]:focus  {
+  border:solid 2px #9b59b6;
+}
   .submit-btn {
     background-color: #9B81F0; 
     color: white;
@@ -177,24 +184,7 @@ html, body {
     transform: scale(1.2);
   }
 
-   .submission-btn {
-    background-color: #9B81F0; 
-    color: white;
-    border: none;
-    position:relative;
-    padding: 1.0rem 3.0rem;
-    text-transform:uppercase;
-    border-radius: 2rem;
-    max-width:45rem;
-    font-size: 2.5rem;
-    font-family:"Marvel";
-    cursor: pointer;
-    transition: all 0.3s ease;}
 
-    .submission-btn:hover {
-    background-color: #4C56DF;
-    transform: scale(1.4);
-  }
 
   .form-label{
     display:block;
@@ -203,15 +193,29 @@ html, body {
   }
 
   .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:1800px;
+    /* display: grid; */
+    /* place-items: center; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-auto-columns:26vw; */
+
+
+    width:100%;
+    /* background-color:red; */
+
   }
 
 
   .btn img {
-    margin:10px;
-    width:26vw;
-    max-width:24rem;
+    /* width:100vw;
+    max-width:40rem; */
+    /* width:28rem; */
+    width:clamp(14rem,24vw,30rem);
+    max-width:95%;
+    /* width:clamp(); */
     cursor:pointer;
     transition: 
     background-color 0.3s ease, transform 0.3s ease;
@@ -243,7 +247,7 @@ html, body {
 
   .enlarge:hover {
     transform:
-      scale(1.1);
+      scale(1.07);
   }
 
   .emphasize{
@@ -262,10 +266,12 @@ html, body {
   }
 
 iframe{
-  /* position: relative; */
-  width: 40rem;  
-  height: 22.5rem;
+
+  width:40rem;
+  max-width:50vw;
+  aspect-ratio:5/2.85;
   border: none;
+  border-radius:0.5rem;
   transition:transform 0.3s ease-in-out;
   max-width:100%;
 
@@ -277,7 +283,9 @@ iframe:hover{
 
 
 .format{
-  max-width: 35rem;
+  /* width:35vw; */
+  max-width: 100%;
+
   /* min-height:fit-content; */
   margin:1rem;
   display: flex;
@@ -307,8 +315,71 @@ iframe:hover{
   100%{transform: translateY(0);}
 }
 
+.example {
+  display:flex;
+  flex-wrap:wrap;
+  column-gap:20px; 
+  row-gap:10px;
+  max-width:100%;
+  text-align:left;
+  height:auto;
+  width:auto;
+  min-height:fit-content;
+
+}
+
+.item {
+  border-radius:1rem;
+  position:relative;
+  display:inline-block;
+  padding:10px;
+  background-position: center;
+  background-size:cover;
+  flex-grow:1;
+  max-width:500px;
+  overflow:hidden
+
+}
+
+.item > * {
+  color:white;
+  position:relative;
+  z-index: 1;
+
+}
+.item * {
+  color:white;
+  position:relative;
+  z-index: 2;
+
+}
+
+
+.item:before {
+  background-image:linear-gradient(to bottom, #9b81f085, #3e2e9bcc);
+  content:'';
+  position:absolute;
+  left:0; 
+  top:0;
+  width:100%; 
+  height:100%;
+  display:inline-block;
+  border-radius:inherit;
+  z-index:1;
+  
+}
+
+.pro-examples {
+  /* background-color:blue; */
+  display:flex;
+  width:100%;
+  align-items:center;
+  height:fit-content;
+  justify-content:start;
+  flex-wrap:wrap;
+  
+}
 img.logo {
-    /* float: left; */
     width: 45rem;
     max-width:100%;
     height: auto;
@@ -403,30 +474,47 @@ img.logo {
   }
 
  
-  .theme{
+  .theme, .special{
   font-family:"Marvel","sans-serif";
-  background: #9B81F0;
+  background-color: #9B81F0;
   padding: 0.5em;
   padding-inline: 1.5em;
-  border-radius:100vw;
+  border-radius:26px;
+  display:inline-block;
+
   color: #eff0ff;
+
   cursor:pointer;
   transition: all 400ms ease-in-out;
   border:dashed 5px #eac4f3;
-  font-size:clamp(1.5rem,2.6vw,3rem);
+  font-size:clamp(2rem,2.6vw,3rem);
   margin:1rem;
   }
 
+ 
 
   .theme:hover {
     transform:
       scale(1.07);
       filter:hue-rotate(40deg); 
+
+  }  
+
+  .special:hover{
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.253);
+    transform: translateY(-10px) scale(1.07);
+    border:dashed 5px #eac4f3;
+    filter:hue-rotate(40deg); 
+
+  }
+
+  .special:focus{
+      outline:solid 2px #c9cbf3;
   }
   
   .landing-page {
     min-height:100vh;
-    width:100%;
+    width:100vw;
     background: url("assets/crumpled paper.png") no-repeat center center fixed;
     background-size: cover;
     display: flex;
@@ -445,33 +533,24 @@ img.logo {
     width: 100%;
     background: url("assets/tear paper.png") no-repeat bottom center;
     background-size: cover;
-  } */
+  } 
 
 
 /* media queries */
-@media(max-width:800px){
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-
-  .btn img {
-    width:40vw;
-    max-width:30rem;
-  }
-}
 
 @media(max-width:490px){
-  .image-grid {
-    grid-template-columns: repeat(1, 1fr);
-
-  }
 
   .btn img {
-    width:80%;
+    width:90%;
   }
 }
+
+
 @media (max-width: 600px){
+  .btn img {
+    width:90%;
+  }
+
   #tentacle-cat{
     width:100px;
   }
@@ -492,11 +571,11 @@ img.logo {
 
 
 
-
 }
+@media(max-width:800px){
 
 
-@media (max-width:800px){
+
   #tentacle-cat{
     display:none;
     }
@@ -515,18 +594,25 @@ img.logo {
    #tentacle-cat{
     display:none;
     }
+
+
+
 }
 
 @media (max-width:1200px){
   #tentacle-cat{
-  width:200px    }
- nav {
-  display:none;
+    width:200px;
+}
+  nav {
+    display:none;
  }
   #cat1, #cat3 {
     display:none;
 
   }
+
+
+
 }
 
 @media (min-width:1200px){
@@ -535,7 +621,16 @@ img.logo {
     display:none;
   }
 
+  .format {
+    width:35vw;
+  }
+
+  .special, .theme {
+    border-radius:100vw;
+  }
+
+
+
   
 }
 
-/* 567 */
