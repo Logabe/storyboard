@@ -109,7 +109,7 @@ html, body {
   
   .tier {
     display:grid;
-    place-items:center;
+    justify-items:center;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap:20px;
     margin: 0.5rem 1rem;
