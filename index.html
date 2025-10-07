@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="icon" href="assets/icon-cat.png" type="image/png">
 
@@ -32,13 +32,18 @@
   
 
 <body>
-
   
   <section class="landing-page">
-    <div class="container heading">
+    <div class="container">
       <img src="assets/logo.png" alt="Storyboard's logo" class="logo"/>
-      
-      <nav>
+ 
+      <iframe  src="https://www.youtube.com/embed/RiJ9CFdAZoE" 
+      title="Get FREE Prizes by Making a VISUAL NOVEL?" frameborder="0" 
+      style="border:solid 3px #9B81F0;border-radius:1rem;max-width:94%;flex-grow:1;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true">
+      </iframe>
+      <!-- <nav>
       <h2 style="font-family:'Marvel'">
         <a href="#section-steps" class="enlarge"> > HOW DOES THIS WORK?</a>
         <div class="smalltopspace"></div>
@@ -51,7 +56,7 @@
         <a href="#section-faq" class="enlarge"> > FAQ</a>
       </h2>
       </nav>
-    
+     -->
     </div>
     <h1 style="margin:0;">MAKE A VISUAL NOVEL, GET COOL PRIZES!</h1> 
     <form method="post" action="" name="email-form" class="email-form form-row">
@@ -60,39 +65,40 @@
       <input type="SUBMIT" class="submit-btn">
     </form>
     
-    <p>FOR TEENS 18 AND UNDER... <br><span style="font-weight:100">This month's challenge ends September 31, 2025</span></p>
+    <p>FOR TEENS 18 AND UNDER... <br><span style="font-weight:100">This month's challenge ends October 31st, 2025</span></p>
          <a href="https://hackclub.com">
       <img src="assets/cat.png" width="200px" id="cat1" style="left:0;position:absolute; padding:3rem;bottom:15px;" class="rotate">
     </a>
+  <!-- <img src="assets/tear paper.png" width="100%" style="background-color:transparent;"> -->
 
 </section>
 
 <section id="section-steps">
-
-  <h2 class="header"data-aos="fade-up">HOW DOES STORYBOARD WORK?</h2>
+  <h2 class="header" data-aos="fade-up" >HOW DOES STORYBOARD WORK?</h2>
   <p data-aos="fade-up">  Track your art and coding hours, create a visual novel based on a new genre every month, and get cool prizes</p>
 
   <div class="image-grid" >
     <div class="btn" data-aos="fade-up">
     <a href="https://join.slack.com/t/hackclub/shared_invite/zt-3b5sak3xz-bFujFB5ciw1jnEDzfUEzAg" target="_blank">
       <img
-        src="assets/step 01.png"
+        src="assets/step 01.png" 
         alt="Raccoons talking about joining Hack Club Slack"
         class="btn"
       > </a>
     </div>
 
     <div class="btn" data-aos="fade-up">
-      <a href="https://docs.google.com" target="_blank">
+      <a href="https://hackclub.slack.com/docs/T0266FRGM/F09616RN3AL" target="_blank">
       <img
         src="assets/step 02.png"
         alt="thinking emoji (about story obviously)"
         class="btn"
       /> </a>
     </div>
+    
 
     <div class="btn" data-aos="fade-up">
-      <a href="https://google.com" target="_blank">
+      <a href="https://docs.google.com/document/d/1tfEr_6A3tlXod_1El_F757lU6MpuZNft8vFeGw0q808/edit?tab=t.0" target="_blank">
       <img
         src="assets/step 03.png"
         alt="locking in on storyboarding (haha get it) and art"
@@ -126,56 +132,73 @@
       /></a>
     </div>
   </div>
-  </div>
-  <h2 class="theme theme-btn"> THEME OF THE MONTH: <i>CLICHÉS WITH A TWIST</i></h2>
+  <h2 class="theme"> THEME OF THE MONTH: <i>THE ENEMY IS CLOSER THAN YOU THINK </i></h2>
 
 </section>
 
-<section id="section-tiers" >
-  <h2 class="header" > RANKS</h2>
-  <p>Depending on the number of hours spent and quality of product, you can get different prizes!</p>
-  <div class="tier" style="">
+<section id="section-tiers" style="position:relative; padding-top:2rem;">
+
+  <h2 class="header"> RANKS</h2>
+  <p style="padding:0;">Depending on the number of hours spent and quality of product, you can get different prizes!</p>
+  <div class="tier">
   <div class="card">
-    <img src="assets/apprentice.png" style="width:95%" class="rotate" >
+    <div id="hover">
+    <img src="assets/apprentice.png" style="width:95%" class="rotateR" >
+
+    </div>
     <h2>APPRENTICE</h2>
-    <p>Spend 3+ hours making a visual novel, get this month's custom stickers</p>
+    <p>Spend 3+ hours of quality work, get this month's 
+      <span style="cursor:pointer;color:#242781;text-decoration:underline" target="_blank" id="click_me" >
+      custom stickers
+      </span>
+    </p>
+  
   </div>
   <div class="card">
-    <img src="assets/spellcaster.png" style="width:95%" class="rotate">
+    <img src="assets/spellcaster.png" style="width:95%" class="rotateL">
     <h2>SPELLCASTER</h2>
-    <p>Spend 10+ hours of quality work, get a BIG Ikea plush!</p>
+    <p>Spend 10+ hours of quality work, get a BIG Ikea plush!(Blahaj!)</p>
   </div>
   <div class="card">
-    <img src="assets/mage.png" style="width:95%" class="rotate">
+    <img src="assets/mage.png" style="width:95%" class="rotateR">
     <h2>MAGE</h2>
-    <p>Spend 30+ hours of quality work, get a <a href= "https://store.steampowered.com/sub/163632/">STEAM LICENSE</a></p>
+    <p>Spend 30+ hours of quality work, get a <a href= "https://store.steampowered.com/sub/163632/" style="text-decoration:underline" target="_blank" >STEAM LICENSE</a></p>
   </div>
   <div class="card">
-    <img src="assets/archmage.png" style="width:95%" class="rotate">
+    <img src="assets/archmage.png" style="width:95%" class="rotateL">
     <h2>ARCHMAGE</h2>
-    <p>Spend 50+ hours of quality work, get a <a href="https://www.amazon.com/XP-PEN-Artist12-Battery-Free-Multi-Function-Sensitivity/dp/B07GNK18VJ/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70%3Aamzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70&crid=23X9S0ASB72QX&cv_ct_cx=drawing%2Btablet&keywords=drawing%2Btablet&pd_rd_i=B07GNK18VJ&pd_rd_r=ed1f0e39-877f-4aab-86fc-3dd791fc6ced&pd_rd_w=1h2b4&pd_rd_wg=jRodZ&pf_rd_p=5a2f80d8-3686-499a-bbaa-70664bd0de70&pf_rd_r=T5AKTKZY2HANXQN2GCB4&qid=1755914944&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=drawing%2Btable%2Caps%2C103&sr=1-1-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" class="emphasize"> DRAWING TABLET </a></p>
+    <p>Spend 50+ hours of quality work, get a <a style="text-decoration:underline" target="_blank" 
+      href="https://www.amazon.com/XP-PEN-Artist12-Battery-Free-Multi-Function-Sensitivity/dp/B07GNK18VJ/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70%3Aamzn1.sym.5a2f80d8-3686-499a-bbaa-70664bd0de70&crid=23X9S0ASB72QX&cv_ct_cx=drawing%2Btablet&keywords=drawing%2Btablet&pd_rd_i=B07GNK18VJ&pd_rd_r=ed1f0e39-877f-4aab-86fc-3dd791fc6ced&pd_rd_w=1h2b4&pd_rd_wg=jRodZ&pf_rd_p=5a2f80d8-3686-499a-bbaa-70664bd0de70&pf_rd_r=T5AKTKZY2HANXQN2GCB4&qid=1755914944&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=drawing%2Btable%2Caps%2C103&sr=1-1-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" 
+      > DRAWING TABLET </a></p>
   </div>
 </div>
+
+<div id="sticker_sheet" style="position:absolute;display:none;background-color:rgba(255, 255, 255, 0.425); flex-direction:column;justify-content: center;align-items:center; 
+z-index:1000; width:100%;height:100%; backdrop-filter: blur(20px);padding:2rem;">
+  <img src="assets/sticker-sheet.png" style="width:450px;max-width:80%;padding:1rem;">
+  <p>click anywhere to exit</p>
+</div> 
+
 </section>
-  <section id="section-tutorial" style="gap:5rem;">
-    <div data-aos="fade-up">
-      <h2 class="header" >STEP-BY-STEP GUIDE TO EVERYTHING</h2>
-      <p> Here's a step-by-step, super easy guide to creating a visual novel!</p>
-    </div>
-    
+
+<section id="section-tutorial" style="gap:5rem;">
+  <div data-aos="fade-up">
+    <h2 class="header" >STEP-BY-STEP GUIDE TO EVERYTHING</h2>
+    <p> Here's a step-by-step, super easy guide to creating a visual novel!</p>
+  </div>
+  
   <div class="stack" dir="rtl">
     <div class="format">
       <h2> #1: WRITING A STORY</h2> 
       <p></p>
     </div>
-    <iframe loading=lazy 
+
+    <iframe loading="lazy" 
           src="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
           allowfullscreen="true" 
           mozallowfullscreen="true" 
           webkitallowfullscreen="true">
     </iframe>
-
-    
   </div>
 
   <div class="stack">
@@ -189,25 +212,25 @@
     <iframe 
         loading="lazy" 
         src="https://www.canva.com/design/DAGwtXqXZN8/HHoaf96sGiy_DKhEbR-dNw/view?embed" 
-        allowfullscreen="allowfullscreen" 
+        allowfullscreen="true" 
         allow="fullscreen">
-  </iframe>
+    </iframe>
   </div>
 
   <div class="stack" dir="rtl">
     <div class="format">
       <h2> #3: CODING WITH REN'PY</h2> 
       <p> New to coding? Ren'py makes it super easy!
-        <br>Check out <a href="https://www.renpy.org/doc/html/quickstart.html" class="emphasize"> RENPY QUICKSTART </a> for a non-slideshow tutorial</hp>  
+        <br>Check out <a href="https://www.renpy.org/doc/html/quickstart.html" class="emphasize"> RENPY QUICKSTART </a> for a non-slideshow tutorial</p>  
     </div>
-     <iframe loading=lazy 
+      <iframe loading="lazy"
         src="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
         allowfullscreen="true" 
         mozallowfullscreen="true" 
         webkitallowfullscreen="true">
     </iframe>
-    
   </div>
+
   <div class="stack">
     <div class="format">
       <h2> #4: PUBLISH & GET PRIZE!</h2> 
@@ -216,7 +239,7 @@
         <a href="https://reddit.com" target="_blank" class="emphasize"> Reddit</a><br> 
         3. Submit link to your post <br> 4. Get your prize! </p>
     </div>
-    <iframe loading=lazy 
+    <iframe loading="lazy" 
           src="https://docs.google.com/presentation/d/e/2PACX-1vTaK4_94OMLMlhZ6nfoUnLDJfQBc1mGVFsUa7D9aQZaNLYXMWnGWpw7gflQwYLAG18MihnZ6S3DtkRe/pubembed?start=false&loop=false&delayms=60000"
           allowfullscreen="true" 
           mozallowfullscreen="true" 
@@ -224,114 +247,128 @@
     </iframe>
   </div>
 
-  <div class="stack"> 
-    <h2 class="header"><a href="https://submit.hackclub.com/storyboard" class="submission-btn enlarge">FINAL SUBMISSION HERE!!</a></h2>
-  </div>
 
+  <h2 style="margin:0;">
+    <a href="https://submit.hackclub.com/storyboard" target="_blank" class="special" >
+      FINAL SUBMISSION HERE!!  
+    </a> 
+  </h2>
+  
 </section>
 
-<section id="section-example" style="gap:3rem">
+<div style="padding:1rem 0rem 6rem 0rem;width:80%;">
   <div>
-    <h2 class="header ">EXAMPLE GAMES</h2>
-    <p> All made with Ren'Py! </p>
+    <h2>Examples:</h2>
+    <p style="padding-left:0;">Stuck? Explore the <a style="border-radius:10px;padding:4px 10px;background-color:#9b81f04d;color:#242781;font-style:italic" href="https://hackclub.slack.com/archives/C095E84SE1X" target="_blank">storyboard</a> channel and feel free to ask questions. Additionally, below we've compiled some amazing visual novels <br>
+      Want a full comprehensible guide? Check out <a href="https://ikealoverkat.github.io/storyboard2/" target="_blank">Kat's Ren'Py Guide</a></p>
+    <h3 style="margin:0;padding:1rem 0rem;text-align:left;">Here are some epic Storyboard submissions:</h3>
   </div>
-  
 
-  <div class="stack" dir="rtl">
+  <div class="example">
+    <a class="item enlarge" style="background-image:url('assets/floorboards-cover.png')" href="https://eamxs.itch.io/floorboards" target="_blank">
+      <h2 style="margin-left:1rem;">Floorboards</h2>
+      <p style="font-size:1.2rem;">
+      Made by: Chuqi Z.<br>
+      Theres been a murder... under your floorboards. Investigate the seven deadly sins to find the murderer.</p>
+      </a>
+    <a class="item enlarge" style="background-image:url('assets/linky.png')" href="https://stoinketypt2.itch.io/for-the-hungry" target="_blank">
+      <h2 style="margin-left:1rem;">For the Hungry</h2>
+      <p style="font-size:1.2rem;">
+      Made by: Lincheeto L.<br>
+      I made a dating sim where you can date and marry different foods and got an amazon gift card through the YSWS!</p>
+      </a>    
+  </div>
+
+  <div class="pro-examples" style="margin-top:1rem;">
+    <div style="display:flex;align-items:start;">
+      <img src="assets/list.png" style="height:3rem;margin-top:1rem;">
+      <p style="font-size:1.2rem;max-width:380px;">Slay the Princess: 'Instead of saving the princess, you have to kill her'<br> <span style="color:#242781;">Genre: Horror</span></p>
+    </div>
+      <iframe
+        style="width:200px;height:100px;margin-left:4rem;"
+        src="https://www.youtube.com/embed/RByDoYQpFa8?si=ACd8UM9iWzRsDyPu" 
+        title="YouTube video player of TK Doki Doki Literature club" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen="true">
+      </iframe> 
+  </div>
+
+  <br>
+
+  <div class="pro-examples">
+    <div style="display:flex;align-items:start;">
+      <img src="assets/list.png" style="height:3rem;margin-top:1rem;">
+      <p style="font-size:1.2rem;max-width:380px;">Doki Doki Literature Club: 'It's a dating sim... or not?' <br> <span style="color:#242781;">Genre: Horror</span></p>
+    </div>
     <iframe 
-    src="https://www.youtube.com/embed/RByDoYQpFa8?si=ACd8UM9iWzRsDyPu" 
-    title="YouTube video player of Slay the Princess" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe> 
-
-    <div class="format purple"> 
-      <h2 class="white-text">SLAY THE PRINCESS</h2>
-      <p class="white-text"> GENRE: HORROR 
-      <p class="small white-text">INSTEAD OF SAVING THE PRINCESS, YOU HAVE TO KILL HER. <br> EVERY CHOICE IS A DIFFERENT ENDING. CHOOSE CAREFULLY. </p>
-      <p class="white-text">CHECK OUT THE GAME
-      <a href="https://www.slaytheprincess.com" class="enlarge" style="filter:brightness(1.9) hue-rotate(42deg) saturate(200%)"> HERE </a></p>
-    </div>
- </div>
-
-  <div class="stack">
-    <img src="assets/floorboards cover.png" style="width:clamp(150px, 50%, 100%);" class="enlarge" alt="photo of Floorboards, game by Chuqi Zheng"> 
-
-    <div class="format purple"> 
-      <h2 class="white-text">FLOORBOARDS </h2>
-      <p class="white-text"> MADE BY: CHUQI ZHENG <br> (storyboard participant) </p>
-      <p class="small white-text">  THERE'S BEEN A MURDER... UNDER YOUR FLOORBOARDS. INVESTIGATE THE SEVEN DEADLY SINS TO FIND THE MURDERER. </p>
-      <p class="white-text"> CHECK OUT THE GAME
-      <a href="https://eamxs.itch.io/floorboards" class="enlarge" style="filter:brightness(1.9) hue-rotate(42deg) saturate(200%)"> HERE </a></p>
-    </div>
+      style="width:200px;height:100px;margin-left:4rem;"
+      src="https://www.youtube.com/embed/kB1663FTpzU?si=TxjCEigLlFWz1qDl" 
+      title="YouTube video player of TK Doki Doki Literature club" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen="true">
+    </iframe> 
   </div>
 
+</div>
 
-  <div class="stack" dir="rtl">
-
-    <iframe  src="https://www.youtube.com/embed/kB1663FTpzU?si=TxjCEigLlFWz1qDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   
-    <div class="format purple"> 
-      <h2 class="white-text">DOKI DOKI LITERATURE CLUB</h2>
-      <p class="white-text"> GENRE: HORROR 
-      <p class="small white-text">IT'S A DATING SIM. ...OR NOT?</p>
-      <p class="white-text">FREE DOWNLOAD! CHECK OUT THE GAME
-      <a href="https://ddlc.moe" class="enlarge" style="filter:brightness(1.9) hue-rotate(42deg) saturate(200%)"> HERE </a></p>
-    </div> 
-  </div>
-
-</section> 
-
-<section id="section-faq">
+<section id="section-faq" style="position:relative;" class="landing-page">
+  
   <h2 class="header">FAQ</h2>
-  <iframe frameborder="0" src="https://itch.io/embed-upload/14738959?color=333333" allowfullscreen="" width="960" height="560"><a href="https://alicesun.itch.io/storyboard-faq">Play Storyboard FAQ on itch.io</a></iframe>
-  <p class="small">Questions? Contact <a href="mailto:storyboard@hackclub.com" style="color:rgb(155, 99, 220)">renran@hackclub.com</a> <br> This website is also <a href="https://github.com/hackclub/storyboard" style="color:rgb(155, 99, 220)">open source</a></p>
-  <img src="assets/tentacle-cat.png" width="250px">
+  <iframe frameborder="0" src="https://itch.io/embed-upload/14738959?color=333333" 
+  allowfullscreen="true" style="width:1200px;max-width:94%;aspect-ratio: 2/1.2;height:auto;">
+    <a href="https://alicesun.itch.io/storyboard-faq">Play Storyboard FAQ on itch.io</a>
+  </iframe>
+  <p style="font-size:24px;">Questions? Contact <a href="mailto:storyboard@hackclub.com" style="color:rgb(155, 99, 220)">renran@hackclub.com</a> <br> This website is also <a href="https://github.com/hackclub/storyboard" style="color:rgb(155, 99, 220)">open source</a></p>
 
-  <p tight small>MADE BY TEENAGERS FOR TEENAGERS</p>
+  <p class="small">MADE BY TEENAGERS FOR TEENAGERS</p>
 
   <div class="team">
     <div class="circle-container">
-      <img src="assets/photo renran.png" alt="photo of renran" class="circle pop"> 
+      <img src="assets/photo renran.png" alt="photo of renran" class="circle"> 
       <span class="circle-text">renran sun</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo alisa.jpg" alt="photo of alisa" class="circle pop"> 
+      <img src="assets/photo alisa.jpg" alt="photo of alisa" class="circle"> 
       <span class="circle-text">alisa ren</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo kat.webp" alt="photo of kat" class="circle pop"> 
+      <img src="assets/photo kat.webp" alt="photo of kat" class="circle"> 
       <span class="circle-text">kat wang</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo sophia.jpeg" alt="photo of sophia" class="circle pop">
+      <img src="assets/photo sophia.jpeg" alt="photo of sophia" class="circle">
       <span class="circle-text">sophia duan</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo yunfei.jpg" alt="photo of yunfei" class="circle pop"> 
+      <img src="assets/photo yunfei.jpg" alt="photo of yunfei" class="circle"> 
       <span class="circle-text">yunfei shuai</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo shyla.jpg" alt="photo of shyla" class="circle pop"> 
+      <img src="assets/photo shyla.jpg" alt="photo of shyla" class="circle"> 
       <span class="circle-text">shyla singal</span>
     </div>
 
     <div class="circle-container">
-      <img src="assets/photo susan.jpg" alt="photo of susan" class="circle pop">
+      <img src="assets/photo susan.jpg" alt="photo of susan" class="circle">
       <span class="circle-text">susan zheng</span>
     </div>
   </div>
+  <img src="assets/tentacle-cat.png" width="300px" id="tentacle-cat" style="position:absolute;bottom:20px;right:20px;">
+
 </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script> 
+
 </body>
 </html>
