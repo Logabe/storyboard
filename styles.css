@@ -41,6 +41,7 @@ html, body {
   h1 {
 
     font-size: 50px;
+    max-width:95%;
     /* text-shadow:-1px -1px 0 white, 1px -1px 0 white, -1px  1px 0 white, 1px  1px 0 white;  */
     text-shadow: 0px 0px 4px white;
   }
@@ -108,8 +109,8 @@ html, body {
   
   .tier {
     display:grid;
-    justify-content:center;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    place-items:center;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap:20px;
     margin: 0.5rem 1rem;
     width:80%;max-width:1600px;
@@ -131,6 +132,9 @@ html, body {
 
   .card {
     padding:0.8rem;
+    max-width:250px;
+    max-width:95%;
+
   }
   
   .email-form {
@@ -314,7 +318,8 @@ iframe:hover{
 .example {
   display:flex;
   flex-wrap:wrap;
-  gap:10px; 
+  column-gap:20px; 
+  row-gap:10px;
   max-width:100%;
   text-align:left;
   height:auto;
@@ -328,20 +333,30 @@ iframe:hover{
   position:relative;
   display:inline-block;
   padding:10px;
-  background-image:url('assets/floorboards-cover.png');
   background-position: center;
   background-size:cover;
   flex-grow:1;
   max-width:500px;
+  overflow:hidden
 
 }
 
 .item > * {
   color:white;
+  position:relative;
+  z-index: 1;
 
 }
-.item:after {
-  background-image:linear-gradient(to bottom, #9b81f048, #2427818e);
+.item * {
+  color:white;
+  position:relative;
+  z-index: 2;
+
+}
+
+
+.item:before {
+  background-image:linear-gradient(to bottom, #9b81f085, #3e2e9bcc);
   content:'';
   position:absolute;
   left:0; 
@@ -350,6 +365,8 @@ iframe:hover{
   height:100%;
   display:inline-block;
   border-radius:inherit;
+  z-index:1;
+  
 }
 
 .pro-examples {
@@ -462,7 +479,7 @@ img.logo {
   background-color: #9B81F0;
   padding: 0.5em;
   padding-inline: 1.5em;
-  border-radius:100vw;
+  border-radius:26px;
   display:inline-block;
 
   color: #eff0ff;
@@ -470,13 +487,11 @@ img.logo {
   cursor:pointer;
   transition: all 400ms ease-in-out;
   border:dashed 5px #eac4f3;
-  font-size:clamp(1.5rem,2.6vw,3rem);
+  font-size:clamp(2rem,2.6vw,3rem);
   margin:1rem;
   }
 
-  .special {
-    font-size:2rem;
-  }
+ 
 
   .theme:hover {
     transform:
@@ -608,6 +623,10 @@ img.logo {
 
   .format {
     width:35vw;
+  }
+
+  .special, .theme {
+    border-radius:100vw;
   }
 
 
